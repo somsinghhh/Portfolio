@@ -261,4 +261,26 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     });
   });
+
+
+  /* Scroll reveals: progressive enhancement, with reduced-motion support. */
+  if (!prefersReducedMotion && 'IntersectionObserver' in window) {
+    const revealTargets = document.querySelectorAll(
+      '.section-header, .about-story-card, .about-philosophy-card, .metric-card, .edu-card, .exp-card, .project-card, .cap-card, .cert-card, .opp-panel, .channel-card, .location-box'
+    );
+    revealTargets.forEach((element) => element.classList.add('reveal-on-scroll'));
+    document.documentElement.classList.add('reveal-ready');
+
+    const revealObserver = new IntersectionObserver((entries, observer) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('is-visible');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.12, rootMargin: '0px 0px -36px 0px' });
+
+    revealTargets.forEach((element) => revealObserver.observe(element));
+  }
+
 });
