@@ -2850,3 +2850,20 @@ body::before {
   }
   .reveal-ready .reveal-on-scroll { opacity: 1; transform: none; }
 }
+
+
+/* Keep the full name readable at every viewport width. */
+.hero-name {
+  max-width: 100%;
+  overflow-wrap: normal;
+  word-break: normal;
+  hyphens: none;
+  font-size: clamp(2.1rem, 5vw, 4.1rem);
+  letter-spacing: -0.055em;
+}
+.hero-name-rest { white-space: nowrap; }
+@media (max-width: 430px) {
+  .hero-name { font-size: clamp(1.7rem, 8.2vw, 2.3rem); }
+  .hero-name-rest { white-space: normal; }
+}
+.certifications-grid { grid-template-columns: repeat(auto-fit, minmax(min(100%, 260px), 1fr)); }
