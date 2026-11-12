@@ -2867,3 +2867,21 @@ body::before {
   .hero-name-rest { white-space: normal; }
 }
 .certifications-grid { grid-template-columns: repeat(auto-fit, minmax(min(100%, 260px), 1fr)); }
+
+
+/* Keep the hero name on three intentional lines inside its column. */
+.hero-name {
+  max-width: 100%;
+  font-size: clamp(2.65rem, 5.6vw, 4.5rem);
+  line-height: .98;
+  letter-spacing: -.055em;
+  overflow-wrap: normal;
+  word-break: normal;
+}
+.hero-line { display: block; white-space: nowrap; }
+@media (min-width: 761px) {
+  .hero-name { font-size: clamp(2.55rem, 4.25vw, 3.65rem); }
+}
+@media (max-width: 430px) {
+  .hero-name { font-size: clamp(2.2rem, 12vw, 3.15rem); }
+}
