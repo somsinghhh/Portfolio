@@ -2885,3 +2885,73 @@ body::before {
 @media (max-width: 430px) {
   .hero-name { font-size: clamp(2.2rem, 12vw, 3.15rem); }
 }
+
+
+/* Approved theme update: deep charcoal, graphite, and muted sage.
+   Color-only overrides; existing layout and spacing rules remain unchanged. */
+:root {
+  --color-warm-ivory: #14171C;
+  --color-soft-white: #25282D;
+  --color-card-white: #25282D;
+  --color-charcoal: #F1EFE7;
+  --color-charcoal-hover: #545E56;
+  --color-charcoal-subtle: #25282D;
+  --color-muted-olive: #818576;
+  --color-olive-dark: #B6B49F;
+  --color-olive-light: #37403F;
+  --color-olive-tint: rgba(129, 133, 118, 0.14);
+  --color-warm-grey: #B6B49F;
+  --color-text-dim: #B6B49F;
+  --color-border: #37403F;
+  --color-border-subtle: rgba(182, 180, 159, 0.14);
+  --color-border-hover: #818576;
+  --color-emerald: #818576;
+  --color-emerald-bg: #25282D;
+  --color-emerald-border: #545E56;
+
+  --bg-page: #14171C;
+  --bg-surface: #25282D;
+  --bg-card: #25282D;
+  --text-main: #F1EFE7;
+  --text-muted: #B6B49F;
+  --text-dim: #B6B49F;
+}
+
+html, body { background-color: #14171C; color: #F1EFE7; }
+.site-header, .site-header.scrolled { background-color: rgba(20, 23, 28, 0.92); border-color: #37403F; }
+.mobile-drawer-inner, .intro-overlay { background-color: #14171C; color: #F1EFE7; }
+.mobile-toggle:hover, .btn-secondary:hover { background-color: #37403F; }
+.portrait-image-box, .project-schema, .node, .ch-icon { background-color: #25282D; }
+.edu-card-featured { background-color: #25282D; }
+.edu-badge-prior, .project-badge, .project-badge.academic { background-color: #37403F; color: #F1EFE7; }
+.hero-stats-bar, .metric-card, .edu-card, .exp-card, .cert-card, .channel-card { background-color: #25282D; }
+.project-card { background-color: #25282D; }
+.about-philosophy-card { background-color: #25282D; color: #F1EFE7; border: 1px solid #37403F; }
+.philo-tag, .philosophy-author, .philo-subtext { color: #B6B49F; }
+.philosophy-text { color: #F1EFE7; }
+
+.nav-link-contact, .mobile-contact-cta, .btn-primary, .btn-action,
+.filter-btn.active, .node.highlight, .edu-badge-current {
+  background-color: #545E56;
+  color: #F1EFE7;
+  border-color: #545E56;
+}
+.nav-link-contact:hover, .header-icon-btn:hover, .mobile-contact-cta:hover,
+.btn-primary:hover, .btn-action:hover, .social-pill:hover, .c-tag:hover,
+.btn-copy-email:hover, .btn-copy-email.copied, .btn-visit-link:hover,
+.back-to-top-btn:hover, .node.highlight:hover, .filter-btn.active:hover {
+  background-color: #545E56;
+  color: #F1EFE7;
+  border-color: #818576;
+}
+.btn-secondary { color: #F1EFE7; }
+.btn-action-subtle { background-color: #25282D; color: #F1EFE7; border-color: #37403F; }
+.btn-action-subtle:hover { background-color: #37403F; color: #F1EFE7; border-color: #818576; }
+.project-card.featured { border-top-color: #818576; }
+.project-card:hover, .metric-card:hover, .exp-card:hover, .channel-card:hover { border-color: #818576; }
+.section-tag, .project-num, .metric-icon, .cert-domain { color: #818576; }
+.hero-period, .logo-dot { color: #818576; }
+.hero-headline { border-left-color: #818576; }
+body::before { background-image: radial-gradient(rgba(129, 133, 118, .14) .55px, transparent .55px); }
+.hero-section::before { background: radial-gradient(circle at 38% 42%, rgba(55, 64, 63, .56), rgba(37, 40, 45, .40) 43%, transparent 70%); }
+.hero-section::after { color: rgba(182, 180, 159, .4); }
