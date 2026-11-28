@@ -85,14 +85,14 @@
           <span class="text-grey">BEHIND THE BUILDER.</span>
         </h1>
 
-        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: clamp(2rem, 5vw, 4rem); align-items: center; margin-top: 3.5rem;">
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 320px), 1fr)); gap: clamp(2rem, 5vw, 4rem); align-items: center; margin-top: 3.5rem;">
           <!-- Left: Portrait Frame with Orange Glow -->
-          <div style="position: relative; max-width: 440px; margin: 0 auto; width: 100%;">
+          <div class="about-portrait-wrapper" style="max-width: 440px;">
             <div style="position: absolute; top: 10%; left: 10%; width: 80%; height: 80%; border-radius: 50%; background: radial-gradient(circle, #E96A45 0%, rgba(233,106,69,0.2) 60%, transparent 75%); filter: blur(30px); z-index: 1;"></div>
             <div class="hero-portrait-frame" style="max-width: 100%; aspect-ratio: 1 / 1.1; z-index: 2;">
               <img src="assets/images/som-singh.jpg" alt="Som Rambhan Singh portrait" width="1024" height="1024">
             </div>
-            <div style="position: absolute; bottom: -18px; right: 15px; z-index: 3; background: var(--color-orange); color: white; padding: 0.75rem 1.5rem; border-radius: var(--radius-sm); font-family: var(--font-subheading); font-size: 0.92rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; box-shadow: 0 10px 25px rgba(0,0,0,0.5);">
+            <div class="about-portrait-badge" style="position: relative; z-index: 3;">
               SOM RAMBHAN SINGH
             </div>
           </div>
@@ -133,7 +133,7 @@
          ========================================================================== -->
     <section class="section section-white">
       <div class="container-fluid">
-        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: clamp(2rem, 4vw, 4rem); align-items: flex-start;">
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 320px), 1fr)); gap: clamp(2rem, 4vw, 4rem); align-items: flex-start;">
           <!-- Left: Personal Details Card (Stacked: Question on Top, Answer Below) -->
           <div class="personal-details-col">
             <div class="section-tag">
@@ -211,7 +211,7 @@
               This three-part conviction governs how I approach software, data models, and team leadership. A concept remains an abstract novelty until it is tested against reality, optimized through feedback, and hardened into production.
             </p>
 
-            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1.5rem; margin-top: 2rem;">
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 200px), 1fr)); gap: 1.5rem; margin-top: 2rem;">
               <div style="padding: 1.5rem; background: #F5F5F3; border-radius: var(--radius-sm);">
                 <div style="font-family: var(--font-heading); font-size: 1.4rem; color: var(--color-dark); margin-bottom: 0.4rem;">DISCIPLINE</div>
                 <p style="font-size: 0.9rem; color: #666;">Consistent execution trumps fleeting bursts of inspiration. Every line of code serves an explicit purpose.</p>
@@ -260,7 +260,7 @@
             <p style="color: #B5B5B2; font-size: 1.05rem; line-height: 1.75; margin-bottom: 1rem;">
               My technical center of gravity revolves around three interconnected domains:
             </p>
-            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 1.5rem; margin-top: 1.5rem;">
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 240px), 1fr)); gap: 1.5rem; margin-top: 1.5rem;">
               <div style="background: rgba(255,255,255,0.03); border: 1px solid var(--color-dark-border); padding: 1.5rem; border-radius: var(--radius-sm);">
                 <div style="font-family: var(--font-heading); font-size: 1.4rem; color: var(--color-white); margin-bottom: 0.4rem;">DATA SCIENCE & EDA</div>
                 <p style="font-size: 0.9rem; color: #888;">Extracting predictive insights, statistical models, and operational clarity from complex data.</p>
